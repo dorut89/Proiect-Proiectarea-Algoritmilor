@@ -1,0 +1,49 @@
+//protocol version 1.2 for viewer version 1.2
+//step 17) was modyfied a litlle
+
+0) socket policy 
+1) V: 'v'
+2) S: "ACK\n"
+3) V: (Length of image in bytes)[1]:int
+4) V: (image bytes)[length]
+5) V: (real width)[1]:int
+6) V: (real height)[1]:int
+7) V: (start position X)[1]:int
+8) V: (start position Y)[1]:int
+9) V: (direction)[1]:int 			//(0 go left relative to start point, 1 go right relative to start point)
+10)V: (rotation)[1]:int				//(-180 <-> 180);
+11)V: (numberof laps)[1]:int
+12)V: (reference time)[1]:int 		//in seconds
+13)V: (number of clients)[1]:int 
+14)V: (client ID, clientIP, client Port)[number of clients]:int //(3*number of clients) intregi unul dupa altul
+S: //--------------Wait for AI connections----------
+15)S: "ready\n"
+16)V: (123456789)[1]:int //sends this integer when the race can actually start (when the 5...4...3...2...1...GO! animation is finnsihed)
+17)S: (CLIENT_ID CAR ACK BRK SPD STR -1 -1)[(number of clients)*2)]:int //first time the server will send the car configuration 8 integers. The last two will be -1. 
+18)S: (CLIENT_ID CAR X Y ROTATION DISTANCE POSITION LAP)[(number of clients)*2)*N]: int //now while the race is on if it wants to update a cars position it will have to send this 8 integers. Distance is relative to the first car in the race.
+19)S: (-1 -1 -1 -1 -1 -1 -1 -1)[1]:int // the race ends.
+
+If a car needs to be disqualified step 18) will be replaced with step 18')
+18') S: (CLIENT_ID CAR -1 -1 -1 -1 -1 -1)
+
+Detalii:
+
+Versiunea viewer-ului a fost adaugata in coltul din dreapta jos. Versiunea curenta este 1.2 .
+
+Protocolul a ramas in mare parte la fel. Singurele diferente apar la pasii 17, 18, 19, 18'. Mesajele de la 18 pot fi trimise in orice ordine...serverul nu asteapta sa le primeasca neaparat in ordinea ID-urilor sau ceva de genul. De asemenea mesajul de descalificare a unei masini poate sa apara ori o singura data ori de fiecare data, depinde de server.
+
+La pasul 18 serverul va trimite pentru fiecare jucator si masina: x si y in pixeli, rotatia acesteia in grade, distanta relativa la prima masina din cursa, pozitia in cursa, si tura curenta a masinii. 
+
+Valorile pentru SPD, BRK, ACC, STR  vor fi trimise ca procentaje din valorile maxime in cazul in care restul de variabile vor fi 0.
+
+Din formula: 10*ACC+10*BRK+SPD+200*STR = 400 => MAX(ACC) = 40; MAX(BRK) = 40; MAX(SPD)=400; MAX(STR)=2;
+
+De exemplu daca o masina are urmatorii parametrii: 10/10/100/0.5 , serverul va trimite: 25 25 25 25, pentru ca de exemplu pentru ACC: 40 * 25% = 10 sau pentru STR 2*25% = 0.5 .
+
+Pentru pasul 0: se poate verifica: http://www.broculos.net/tutorials/how_to_make_a_multi_client_flash_java_server/20080320/en sau http://www.adobe.com/devnet/flashplayer/articles/socket_policy_files.html
+
+In momentul de fata mai trebuie adaugata problema in cazul in care vor fi ba doua masini ba una singura pentru fiecare jucator, cat si o mica problema la finalizarea cursei. De asemenea mai este feature-ul cerut de catre alte echipe precum ca serverul sa trimita si numele jucatorului. Va fi si acesta implementat. 
+
+In lipsa unui AI si a unui server complet si perfect functional mai pot exista anumite bug-uri care nu au putut fi sesizate in timpul testarilor. Un astefel proiect din mai multe componente individuale nu se poate sa se astepte ca fiecare etapa sa functioneze perfect in lipsa celorlalte. Daca vor mai aparea probleme aceste vor fi rezolvate in cel mai scurt timp. Serverul in momentul de fata nu depinde de viewer. Daca mai sunt probleme acestea tin de calcule si de afisare si nu afecteaza in mod direct serverul in cazul in care acesta trimite corect informatiile. Daca vor mai fi modificari la protocol acestea cu siguranta nu vor fi majore. 
+
+Pentru orice alte intrebari va stam la dispozitie

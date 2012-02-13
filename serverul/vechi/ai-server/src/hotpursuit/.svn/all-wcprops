@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/redmine/hotpursuit/!svn/ver/81/trunk/ai-server/src/hotpursuit
+END
+aiAboutBox.form
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/redmine/hotpursuit/!svn/ver/98/trunk/ai-server/src/hotpursuit/aiAboutBox.form
+END
+State.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/redmine/hotpursuit/!svn/ver/69/trunk/ai-server/src/hotpursuit/State.java
+END
+Limits.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/redmine/hotpursuit/!svn/ver/90/trunk/ai-server/src/hotpursuit/Limits.java
+END
+aiView.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/redmine/hotpursuit/!svn/ver/99/trunk/ai-server/src/hotpursuit/aiView.java
+END
+Engine.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/redmine/hotpursuit/!svn/ver/99/trunk/ai-server/src/hotpursuit/Engine.java
+END
+aiView.form
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/redmine/hotpursuit/!svn/ver/97/trunk/ai-server/src/hotpursuit/aiView.form
+END
+ServerConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/redmine/hotpursuit/!svn/ver/100/trunk/ai-server/src/hotpursuit/ServerConnection.java
+END
+ClientSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/redmine/hotpursuit/!svn/ver/90/trunk/ai-server/src/hotpursuit/ClientSocket.java
+END
+Point.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/redmine/hotpursuit/!svn/ver/90/trunk/ai-server/src/hotpursuit/Point.java
+END
+ai.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/redmine/hotpursuit/!svn/ver/98/trunk/ai-server/src/hotpursuit/ai.java
+END
+RealPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/redmine/hotpursuit/!svn/ver/69/trunk/ai-server/src/hotpursuit/RealPoint.java
+END
+aiAboutBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/redmine/hotpursuit/!svn/ver/98/trunk/ai-server/src/hotpursuit/aiAboutBox.java
+END
+Command.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/redmine/hotpursuit/!svn/ver/69/trunk/ai-server/src/hotpursuit/Command.java
+END

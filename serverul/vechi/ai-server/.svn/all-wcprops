@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/redmine/hotpursuit/!svn/ver/81/trunk/ai-server
+END
+manifest.mf
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/redmine/hotpursuit/!svn/ver/69/trunk/ai-server/manifest.mf
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/redmine/hotpursuit/!svn/ver/69/trunk/ai-server/build.xml
+END

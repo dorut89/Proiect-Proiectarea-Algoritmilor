@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/redmine/hotpursuit/!svn/ver/70/trunk/ai-server/src/hotpursuit/resources
+END
+aiView.properties
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/redmine/hotpursuit/!svn/ver/97/trunk/ai-server/src/hotpursuit/resources/aiView.properties
+END
+ai.properties
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/redmine/hotpursuit/!svn/ver/69/trunk/ai-server/src/hotpursuit/resources/ai.properties
+END
+aiAboutBox.properties
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/redmine/hotpursuit/!svn/ver/98/trunk/ai-server/src/hotpursuit/resources/aiAboutBox.properties
+END
+about.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/redmine/hotpursuit/!svn/ver/69/trunk/ai-server/src/hotpursuit/resources/about.png
+END
+splash.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/redmine/hotpursuit/!svn/ver/69/trunk/ai-server/src/hotpursuit/resources/splash.png
+END

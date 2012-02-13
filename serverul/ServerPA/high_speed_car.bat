@@ -1,0 +1,1 @@
+java -jar aiController.jar localhost 6666 P1 15 5 100 0.5

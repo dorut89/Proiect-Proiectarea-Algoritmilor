@@ -1,0 +1,2 @@
+v1.5
+Problem with map procesing when start point is in a corner fixed. (Bug #703)

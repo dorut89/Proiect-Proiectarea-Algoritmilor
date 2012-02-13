@@ -1,0 +1,8 @@
+application.args=1234
+#Sat Nov 06 11:25:41 EET 2010
+compile.on.save=true
+do.depend=false
+do.jar=true
+javac.debug=true
+javadoc.preview=true
+user.properties.file=C:\\Users\\Ionut\\.netbeans\\6.9\\build.properties

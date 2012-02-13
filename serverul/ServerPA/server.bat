@@ -1,0 +1,1 @@
+java -jar server.jar localhost 20934 6666 false

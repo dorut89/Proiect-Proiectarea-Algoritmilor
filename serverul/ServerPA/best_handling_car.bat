@@ -1,0 +1,1 @@
+java -jar aiController.jar localhost 6666 "Player 1" 10 5 100 0.75

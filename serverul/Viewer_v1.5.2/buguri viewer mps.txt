@@ -1,0 +1,29 @@
+pt fereastra principala
+---in fullscreen nu se poate introduce nimic in campuri si nici selecta o harta
+---daca se iese din fereastra de optiuni dand click pe OK, orientarea masinii nu se mai poate schimba din taste
+--cred ca ar fi bine sa apara in campurile width si height unitatea de masura, gen 'metres', care sa dispara cand se da click in campul respectiv sau cand se introduce ceva, la fel si in campul reference time ar fi bine sa apara formatul
+-lipseste butonul de fullscreen/iesire din fullscreen
+[DONE]-mesaje care sa anunte lipsa input pt harta si lipsa alegerii pozitiei de start sau o pozitie de start implicita
+[DONE]-dupa ce se incarca o harta, daca se doreste schimbarea ei si incarcarea alteia cele 2 se suprapun
+[DONE]-text fieldul cu numele hartii poate fi mai mic
+[DONE]-schimbarea orientarii masinii nu se poate face atunci cand cursorul se afla in afara hartii
+
+
+pt fereastra de Optiuni
+--!!!(vineri)cred ca ai modificat acum ceva ca dupa ce se aleg clientii si se da click pe OK sau X nu se mai intampla nimic
+--cand apare fereastra de optiuni ar tb sa fie dezactivat restul
+--nu permite alegerea culorii default (0xFF0000) de catre nimeni
+[ZIC CA E OK ASA]-nu prea e usor vizibil butonul 'Adauga client', poate ca ar fi mai bine sa fie deasupra listei
+[ZIC CA E OK ASA]-sugerez in loc de 'Adauga client', 'Adauga jucator'
+[DONE]-cred ca ar trebui sa fie dezactivate campurile 'Nume', 'IP', 'Masina', 'Culoare' pana cand se apasa 'Adauga client', deoarece cineva care nu stie si introduce acele date si apasa apoi pe adauga client trebuie sa introduca din nou, ca s-au pierdut
+[DONE]-trebuie verificate toate inputurile, inclusiv validitatea IP-urilor
+[DONE]-culorile masinilor tb sa fie diferite, adica daca un player alege o culoare deja aleasa sa-i apara mesaj de eroare
+[ZIC CA E OK ASA]-masinile: sunt puse 2 tipuri de masini, nu cred ca are rost avand in vedere ca se cere ca doar culoarea sa difere de la o echipa la alta, in plus tb sa fie masini de formula 1, iar Masina 1 nu este de F1
+[E MAI COMPLICAT]-in lista de clienti cred ca ar fi bine sa apara in dreptul fiecaruia si culoarea masinii
+[DONE]-cred ca ar fi bine sa existe si in dreapta-jos un buton cu ceva de genul 'terminat', ar fi mai intuitiv, cineva ar putea avea impresia ca dand click pe X-ul din colt nu se salveaza setarile
+
+
+pt cursa
+
+[SEMI-DONE][5,4,3,2,1,go!]-cand incepe cursa? imediat ce se apasa butonul de start sau apare intai un cronometru, gen 5, 4, 3, 2, 1 GO! ?
+-ar tb sa apara pe pista pozitia de inceput aleasan
